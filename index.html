@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabify</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/lodash.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <div
+          class="d-flex flex-row align-items-center justify-content-between search-box"
+        >
+          <div class="d-flex align-items-center left">
+            <img src="./assets/search.png" width="20px" height="20px" />
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search tabs..."
+              aria-label="Search tabs"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="d-flex right">
+            <div
+              class="tab-count d-flex align-items-center justify-content-center"
+            >
+              <p class="count fs-5 fw-medium"></p>
+              <img
+                src="./assets/windows.png"
+                alt=""
+                width="20px"
+                height="20px"
+                class="mx-2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row align-items-center quick-access mt-3">
+        <div class="quick-item item-1">
+          <img class="item-image" src="./assets/github.png" alt="" />
+        </div>
+        <div class="quick-item item-2">
+          <img class="item-image" src="./assets/jira.png" alt="" />
+        </div>
+        <div class="quick-item item-3">
+          <img class="item-image" src="./assets/youtube.png" alt="" />
+        </div>
+        <div class="quick-item item-4"></div>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-end group-action mt-3"
+      >
+        <button
+          type="button"
+          class="btn btn-primary custom-btn group-by-site"
+          data-clicked="false"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          data-bs-title="Group tab by site"
+        >
+          <img
+            src="./assets/group-tabs.png"
+            alt=""
+            class="group-tabs"
+            width="20px"
+            height="20px"
+          />
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary custom-btn group-selected"
+          data-group-clicked="false"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          data-bs-title="Group selected tab"
+        >
+          <img
+            src="./assets/selection.png"
+            alt=""
+            class="group-tabs"
+            width="20px"
+            height="20px"
+          /></button
+        ><button
+          type="button"
+          class="btn btn-primary custom-btn"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-title="Close all tab"
+        >
+          <img
+            src="./assets/close-tab.png"
+            alt=""
+            class="group-tabs"
+            width="20px"
+            height="20px"
+          />
+        </button>
+      </div>
+      <div class="all-tabs mt-3"></div>
+    </div>
+
+    <script src="js/popup.js"></script>
+  </body>
+</html>
